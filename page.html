@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sign In :: Rugby Planner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./css/landing_page_custom.css" type="text/css" media="all" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/facvicon-rugby/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/facvicon-rugby/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/facvicon-rugby/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/facvicon-rugby/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/facvicon-rugby/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/facvicon-rugby/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/facvicon-rugby/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/facvicon-rugby/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/facvicon-rugby/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/facvicon-rugby/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/facvicon-rugby/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/facvicon-rugby/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/facvicon-rugby/favicon-16x16.png">
+    <link rel="manifest" href="./img/facvicon-rugby/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/facvicon-rugby/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" as="style" href="https://php.inheritxdev.in/rugby_planner/qa/public/build/assets/app-BiQ4d6Ex.css" /><link rel="modulepreload" href="https://php.inheritxdev.in/rugby_planner/qa/public/build/assets/app-VlhGRmMH.js" /><link rel="stylesheet" href="https://php.inheritxdev.in/rugby_planner/qa/public/build/assets/app-BiQ4d6Ex.css" /><script type="module" src="https://php.inheritxdev.in/rugby_planner/qa/public/build/assets/app-VlhGRmMH.js"></script></head>
+
+<body class="md:overflow-hidden h-full">
+
+<div class="flex flex-wrap h-full">
+
+    <div class="relative w-full md:w-[40%] lg:w-1/2 login_image_section">
+        <!-- Banner section starts -->
+        <div
+                class="bg-cover bg-no-repeat bg-center min-h-[200px] md:h-screen ml-auto relative flex items-center justify-center p-4 lg:p-6">
+            <div class="caption relative z-20 text-center mx-auto pb-0 flex h-full flex-col items-center justify-center">
+                <img src="./img/login_new.jpg" class="w-full" alt="Rugby Planner" />
+            </div>
+        </div>
+        <!-- Banner section ends -->
+    </div>
+
+    <div class="relative w-full md:w-[60%] lg:w-1/2 py-0-6 px-1 md:overflow-auto md:h-screen">
+
+        <div class="flex items-center justify-center big-screen-center-align">
+            <div class="w-full px-4 md:px-9 xl:px-14 2xl:px-24 py-4 xl:py-8 2xl:pt-8">
+                <div class="flex items-center justify-center text-center gap-4 mb-5 md:mb-9">
+                    <h3 class="anton text-2xl text-center md:text-4xl mb-0">Sign in</h3>
+                </div>
+                <form method="post" id="user-login" action="https://php.inheritxdev.in/rugby_planner/qa/login" class="relative mx-auto max-w-96 user-login">
+                    <input type="hidden" name="_token" value="hGiaPXR4j8vWdukwUP5BGTMtXKussUzln5XqEbXx" autocomplete="off">                    <div class="flex -mx-3 flex-wrap">
+                        <div class="px-3 w-full">
+                            <div class="mb-6 relative">
+                                <label for="Enter email" class="block mb-2 text-sm lg:text-base font-medium text-gray-900 leading-3">Email</label>
+                                <input type="email" name="email" placeholder="Enter email" value=""
+                                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full py-1 px-5 h-[44px] xl:h-[52px]"/>
+                            </div>
+                        </div>
+                        <div class="px-3 w-full">
+                            <div class="mb-6 relative">
+                                <label for="Password"
+                                       class="block mb-2 text-sm lg:text-base font-medium text-gray-900 leading-3">Password</label>
+                                <div class="relative w-full">
+                                    <div class="absolute inset-y-0 right-2 flex items-center pe-3 cursor-pointer h-14">
+                                        <div class="hide-password">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.8974 7.10244L7.10244 10.8974C6.61494 10.4099 6.31494 9.74244 6.31494 8.99994C6.31494 7.51494 7.51494 6.31494 8.99994 6.31494C9.74244 6.31494 10.4099 6.61494 10.8974 7.10244Z"stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M4.19988 13.3199C3.44988 12.6749 2.76738 11.8799 2.16738 10.9424C1.49238 9.88491 1.49238 8.10741 2.16738 7.04991C3.05238 5.66241 4.13238 4.57491 5.33988 3.84741" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.365 4.32761C12.0525 3.33761 10.5525 2.79761 9 2.79761" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.31494 14.6475C7.16994 15.0075 8.07744 15.2025 8.99994 15.2025C11.6474 15.2025 14.1149 13.6425 15.8324 10.9425C16.5074 9.88501 16.5074 8.10751 15.8324 7.05001C15.5849 6.66001 15.3149 6.29251 15.0374 5.94751" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.6326 9.5249C11.4376 10.5824 10.5751 11.4449 9.51758 11.6399" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.1025 10.8975L1.5 16.5" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M16.5 1.5L10.8975 7.1025" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="show-password">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.77244 10.4999C6.47994 10.0724 6.31494 9.55494 6.31494 8.99994C6.31494 7.51494 7.51494 6.31494 8.99994 6.31494C10.4849 6.31494 11.6849 7.51494 11.6849 8.99994C11.6849 10.4849 10.4849 11.6849 8.99994 11.6849" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13.1699 4.18511C11.9024 3.28511 10.4774 2.79761 8.99988 2.79761C6.35238 2.79761 3.88488 4.35761 2.16738 7.05761C1.49238 8.11511 1.49238 9.89261 2.16738 10.9501C3.88488 13.6501 6.35238 15.2101 8.99988 15.2101C11.6474 15.2101 14.1149 13.6501 15.8324 10.9501C16.5074 9.89261 16.5074 8.11511 15.8324 7.05761" stroke="#6796AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <input type="password" name="password" id="password" placeholder="Enter password" required
+                                           class="bg-gray-50 pe-10 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full py-1 px-5 h-[52px]"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="justify-between mb-1 lg:mb-5 gap-2 text-left md:flex w-full items-center">
+                        <div class="flex items-center mb-5">
+                            <label for="remember" class="text-xs text-gray-600">
+                                <a data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" href="#" class="text-primary-500 hover:text-primary-700">Forgot Password ?</a></label>
+                        </div>
+                        <h3 class="md:text-right text-sm text-gray-600 mb-5">Don&#039;t Have an Account?
+                            <a href="https://php.inheritxdev.in/rugby_planner/qa/register" class="text-primary-500 hover:text-primary-700">Sign Up</a></h3>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                                class="submit text-white min-w-36 min-h-[52px] bg-primary-500 hover:bg-primary-700 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-base w-full sm:w-auto px-5 py-3 text-center">
+                            Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password modal -->
+<div id="authentication-modal" tabindex="-1" aria-hidden="true"
+     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[99999] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow">
+
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4">
+                <button type="button"
+                        class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="p-4 md:p-8 pt-4">
+                <h3 class="text-xl font-medium text-secondary-900 mb-3">
+                    Forgot Password?
+                </h3>
+
+                <p class="text-secondary-900 text-sm mb-2">Just drop your email, and we&#039;ll send you the instructions.</p>
+                <form class="forgotPassword" action="https://php.inheritxdev.in/rugby_planner/qa/forgot-password">
+                    <input type="hidden" name="_token" value="hGiaPXR4j8vWdukwUP5BGTMtXKussUzln5XqEbXx" autocomplete="off">                    <div class="relative">
+                        <input type="email" name="email"
+                               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full py-1 px-5 h-[40px] xl:h-[42px]"
+                               placeholder="Enter email" required />
+                    </div>
+                    <div class="text-center mt-8">
+                        <button type="submit"
+                                class="text-white min-w-full min-h-[52px] bg-primary-500 hover:bg-primary-700 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-base w-full sm:w-auto px-5 py-3 text-center">
+                            Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/user/user-auth.js"></script>
+<script type="text/javascript" src="./js/jquery_validation.js"></script>
+<script src="./js/flowbite.min.js"></script>
+
+<script type="text/javascript">
+    $(".hide-password").hide();
+        $('.cursor-pointer').click(function(){
+            const passwordField = document.getElementById("password");
+            const togglePassword = document.querySelector(".cursor-pointer");
+                if (passwordField.type === "password") {
+                    passwordField.type = "text";
+                    togglePassword.classList.remove("fa-eye");
+                    togglePassword.classList.add("fa-eye-slash");
+                    $(".hide-password").show();
+                    $(".show-password").hide();
+                } else {
+                    passwordField.type = "password";
+                    togglePassword.classList.remove("fa-eye-slash");
+                    togglePassword.classList.add("fa-eye");
+                    $(".hide-password").hide();
+                    $(".show-password").show();
+                }
+            // });
+        })
+
+</script>
+</body>
+
+</html>

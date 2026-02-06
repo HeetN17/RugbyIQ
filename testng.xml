@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RugbyIQ Test Suite" verbose="1">
+    
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="utility.ExtentReportRgy"></listener>
+    </listeners>
+    
+    <test name="Rugby Tests">
+        <classes>
+           <!--   <class name="test.LogIN"/>-->
+           <!--   <class name="test.LogOUT"/>-->
+          <!--    <class name="test.CreateTeamTest"/>-->
+            <!--  <class name="test.CreatePlanTest"/>-->
+            <!--  <class name="test.CreateSessionTest"/>-->
+            <!--  <class name="test.CreateDrillTest"></class>-->
+            <class name="test.NavigationTest"></class>
+        </classes>
+    </test>
+    
+</suite>
