@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T12:09:51 IST" name="Suite" finished-at="2026-02-12T12:11:15 IST" duration-ms="84366">
+  <suite started-at="2026-02-12T15:42:53 IST" name="Suite" finished-at="2026-02-12T15:43:13 IST" duration-ms="19897">
     <groups>
     </groups>
-    <test started-at="2026-02-12T12:09:51 IST" name="Test" finished-at="2026-02-12T12:11:15 IST" duration-ms="84366">
-      <class name="test.SearchRecordsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:09:51 IST" name="setUp" finished-at="2026-02-12T12:09:56 IST" duration-ms="5003" status="PASS">
+    <test started-at="2026-02-12T15:42:53 IST" name="Test" finished-at="2026-02-12T15:43:13 IST" duration-ms="19897">
+      <class name="test.TrashTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:42:53 IST" name="setUp" finished-at="2026-02-12T15:42:59 IST" duration-ms="5287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchTeam()[pri:1, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:09:56 IST" name="searchTeam" description="Search Specific Team" finished-at="2026-02-12T12:10:10 IST" duration-ms="13581" status="PASS">
+        <test-method signature="trash()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:42:59 IST" name="trash" finished-at="2026-02-12T15:43:12 IST" duration-ms="13800" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTeam -->
-        <test-method signature="searchPlan()[pri:2, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:10:10 IST" name="searchPlan" description="Search Specific Plan" finished-at="2026-02-12T12:10:21 IST" duration-ms="10781" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchPlan -->
-        <test-method signature="searchSessions()[pri:3, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:10:21 IST" name="searchSessions" description="Search Specific Session" finished-at="2026-02-12T12:10:35 IST" duration-ms="14144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSessions -->
-        <test-method signature="searchMyDrill()[pri:4, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:10:35 IST" name="searchMyDrill" description="Search Specific my drill" finished-at="2026-02-12T12:10:48 IST" duration-ms="13223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMyDrill -->
-        <test-method signature="searchPlayBook()[pri:5, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:10:48 IST" name="searchPlayBook" description="Search specific playbook" finished-at="2026-02-12T12:11:00 IST" duration-ms="11982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchPlayBook -->
-        <test-method signature="searchMyPlays()[pri:6, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:11:00 IST" name="searchMyPlays" description="Search specific my plays" finished-at="2026-02-12T12:11:10 IST" duration-ms="9595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMyPlays -->
-        <test-method signature="searchInvitedCoach()[pri:7, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:11:10 IST" name="searchInvitedCoach" description="Search invited coach" finished-at="2026-02-12T12:11:15 IST" duration-ms="5193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchInvitedCoach -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.SearchRecordsTest@3eb25e1a]" started-at="2026-02-12T12:11:15 IST" name="tearDown" finished-at="2026-02-12T12:11:15 IST" duration-ms="439" status="PASS">
+        </test-method> <!-- trash -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:43:12 IST" name="tearDown" finished-at="2026-02-12T15:43:13 IST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.SearchRecordsTest -->
+      </class> <!-- test.TrashTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

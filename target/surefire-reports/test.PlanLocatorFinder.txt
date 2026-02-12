@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: test.PlanLocatorFinder
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.89 s -- in test.PlanLocatorFinder

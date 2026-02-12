@@ -13,7 +13,7 @@
   
     <classes>
     
-     <!--    <class name="test.SignUpTest"></class>-->
+          <!--    <class name="test.SignUpTest"></class>-->
            <!--   <class name="test.LogIN"/>-->
            <!--   <class name="test.LogOUT"/>-->
            
@@ -35,7 +35,7 @@
          <!--    <class name="test.EditPlaysTest"></class>-->
         
          <!--   <class name="test.DeletePlayBookTest"></class>-->
-            <!--  <class name="test.DeleteTeamTest"></class>-->
+          <!--  <class name="test.DeleteTeamTest"></class>-->
         <!-- <class name="test.DeletePlanTest"></class>-->
        <!--   <class name="test.DeleteDrillTest"></class>-->
           
@@ -43,11 +43,13 @@
          <!-- <class name="test.EditMyDrillTest"></class>-->
        <!--  <class name="test.DeleteMyDrillTest"></class>-->
        
-          <class name="test.SearchRecordsTest"></class>
+           <class name="test.SearchRecordsTest"></class>
              <!--   <class name="test.MyProfileTest"></class>-->
            <!--  <class name="test.DrillPlayTest"></class>-->
             <!--  <class name="test.InviteCoachTest"></class>-->
             <!-- <class name="test.EditCoachAccessTest"></class>-->
+            
+            <!--  <class name="test.TrashTest"></class>-->
            
     </classes>
   </test> <!-- Test -->

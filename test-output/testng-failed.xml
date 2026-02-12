@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.EditCoachAccessTest">
+      <class name="test.TrashTest">
         <methods>
           <include name="setUp"/>
-          <include name="editCoachAccess"/>
+          <include name="trash"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- test.EditCoachAccessTest -->
+      </class> <!-- test.TrashTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

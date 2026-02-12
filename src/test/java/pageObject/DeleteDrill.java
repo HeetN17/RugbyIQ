@@ -26,7 +26,7 @@ public class DeleteDrill {
     @FindBy(xpath=" //a[normalize-space()='Yes Remove']")
     WebElement removeDrill;
    
-    @FindBy(xpath = "//h2[contains(@class, 'text-gray-900')]")
+    @FindBy(xpath = "//h3[contains(@class, 'text-gray-900')]")
     List<WebElement> DrillNamesInListing;
     
     public void clickOnThreeDotByName(String drillName) {
@@ -75,6 +75,23 @@ public class DeleteDrill {
             }
         }
         return true;
+    }
+    
+    public boolean isDrillVisibleInListing(String drillName) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            
+            wait.until(ExpectedConditions.visibilityOfAllElements(DrillNamesInListing));
+
+            for (WebElement element : DrillNamesInListing) {
+                if (element.getText().trim().equalsIgnoreCase(drillName)) {
+                    return true;   
+                }
+            }
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }

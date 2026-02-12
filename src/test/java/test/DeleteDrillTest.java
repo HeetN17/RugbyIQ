@@ -9,13 +9,15 @@ import pageObject.CreateSession;
 import pageObject.CreateTeam;
 import pageObject.DeleteDrill;
 import pageObject.LogIn;
+import pageObject.Navigations;
+import pageObject.Trash;
 
 public class DeleteDrillTest extends BaseClassRgy{
 
 	@Test(priority=1,description="Delete Drill")
 	public void deleteDrill() throws InterruptedException {
 		
-		 // 1. Login
+	// 1. Login
         LogIn loginPage = new LogIn(driver);
         loginPage.performLogin(getProperty("email"), getProperty("password"));
         
@@ -46,8 +48,19 @@ public class DeleteDrillTest extends BaseClassRgy{
        delete.removeDrill();
        
        Thread.sleep(2000);
+
+       Navigations navigation = new Navigations(driver);
+       navigation.clickTrash();      
+
+      Trash trash = new Trash(driver);
+
+      trash.gotoDrill();
+      Thread.sleep(3000);
+               
        
        
+       boolean isDrillDeleted = trash.isDrillPresent("My Video");
+       org.testng.Assert.assertTrue(isDrillDeleted, "Drill 'My Video' was not found in Trash");
        
 	}
 }
