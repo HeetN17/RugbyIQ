@@ -37,19 +37,19 @@
          <!--   <class name="test.DeletePlayBookTest"></class>-->
           <!--  <class name="test.DeleteTeamTest"></class>-->
         <!-- <class name="test.DeletePlanTest"></class>-->
-       <!--   <class name="test.DeleteDrillTest"></class>-->
+            <!--    <class name="test.DeleteDrillTest"></class>-->
           
           <!-- <class name="test.CreateMyDrillTest"></class>-->
          <!-- <class name="test.EditMyDrillTest"></class>-->
        <!--  <class name="test.DeleteMyDrillTest"></class>-->
        
-           <class name="test.SearchRecordsTest"></class>
+            <!--  <class name="test.SearchRecordsTest"></class>-->
              <!--   <class name="test.MyProfileTest"></class>-->
            <!--  <class name="test.DrillPlayTest"></class>-->
             <!--  <class name="test.InviteCoachTest"></class>-->
             <!-- <class name="test.EditCoachAccessTest"></class>-->
             
-            <!--  <class name="test.TrashTest"></class>-->
+              <class name="test.TrashTest"></class>
            
     </classes>
   </test> <!-- Test -->

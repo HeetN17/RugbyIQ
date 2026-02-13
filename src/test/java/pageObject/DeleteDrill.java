@@ -25,7 +25,7 @@ public class DeleteDrill {
     
     @FindBy(xpath=" //a[normalize-space()='Yes Remove']")
     WebElement removeDrill;
-   
+    
     @FindBy(xpath = "//h3[contains(@class, 'text-gray-900')]")
     List<WebElement> DrillNamesInListing;
     
@@ -80,12 +80,22 @@ public class DeleteDrill {
     public boolean isDrillVisibleInListing(String drillName) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            
-            wait.until(ExpectedConditions.visibilityOfAllElements(DrillNamesInListing));
-
-            for (WebElement element : DrillNamesInListing) {
-                if (element.getText().trim().equalsIgnoreCase(drillName)) {
-                    return true;   
+            // Try specific locator first
+            try {
+                wait.until(ExpectedConditions.visibilityOfAllElements(DrillNamesInListing));
+                for (WebElement element : DrillNamesInListing) {
+                    if (element.getText().trim().equalsIgnoreCase(drillName)) {
+                        return true;   
+                    }
+                }
+            } catch (Exception e) {
+                // If specific locator fails, try a direct text search
+                By directTextLocator = By.xpath("//*[contains(text(),'" + drillName + "')]");
+                List<WebElement> elements = driver.findElements(directTextLocator);
+                for (WebElement element : elements) {
+                    if (element.isDisplayed()) {
+                        return true;
+                    }
                 }
             }
             return false;

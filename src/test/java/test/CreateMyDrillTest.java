@@ -37,10 +37,7 @@ public class CreateMyDrillTest extends BaseClassRgy {
         drill.clickCreateBtn();
         Thread.sleep(3000);
         
-        drill.isMyDrillVisible(getProperty("myDrillName"));
-        
-        
-        
+        drill.isMyDrillVisible(getProperty("myDrillName"));      
         
 	}
 }

@@ -13,7 +13,6 @@ public class DeletePlayBookTest extends BaseClassRgy{
 	@Test(priority=1,description="Remove Playbook")
 	public void removePlayBook() throws InterruptedException {
 		
-
 	    LogIn loginPage = new LogIn(driver);
 	    loginPage.performLogin(getProperty("email"), getProperty("password"));
 	    
@@ -29,7 +28,6 @@ public class DeletePlayBookTest extends BaseClassRgy{
 	   Thread.sleep(3000);
 	   
 	   delete.confirmRemove();
-	   
-	    
+	   	    
 	}
 }

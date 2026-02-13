@@ -3,6 +3,11 @@ package test;
 import org.testng.annotations.Test;
 
 import baseClass.BaseClassRgy;
+import pageObject.CreateDrill;
+import pageObject.CreatePlan;
+import pageObject.CreateSession;
+import pageObject.CreateTeam;
+import pageObject.DeleteDrill;
 import pageObject.LogIn;
 import pageObject.Navigations;
 import pageObject.Trash;
@@ -40,7 +45,7 @@ public class TrashTest extends BaseClassRgy {
         deleteDrill.clickDeleteDrillOption("My Video");
         Thread.sleep(3000);
         deleteDrill.removeDrill();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         
         // Now go to trash to restore it
         Navigations navigation = new Navigations(driver);

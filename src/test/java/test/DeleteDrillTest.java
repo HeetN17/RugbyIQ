@@ -17,7 +17,7 @@ public class DeleteDrillTest extends BaseClassRgy{
 	@Test(priority=1,description="Delete Drill")
 	public void deleteDrill() throws InterruptedException {
 		
-	// 1. Login
+	    // 1. Login
         LogIn loginPage = new LogIn(driver);
         loginPage.performLogin(getProperty("email"), getProperty("password"));
         
@@ -57,10 +57,8 @@ public class DeleteDrillTest extends BaseClassRgy{
       trash.gotoDrill();
       Thread.sleep(3000);
                
-       
-       
-       boolean isDrillDeleted = trash.isDrillPresent("My Video");
-       org.testng.Assert.assertTrue(isDrillDeleted, "Drill 'My Video' was not found in Trash");
+      boolean isDrillDeleted = trash.isDrillPresent("My Video");
+      org.testng.Assert.assertTrue(isDrillDeleted, "Drill 'My Video' was not found in Trash");
        
 	}
 }

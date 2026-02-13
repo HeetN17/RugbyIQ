@@ -29,7 +29,7 @@ public class EditCoachAccessTest extends BaseClassRgy {
 	        Thread.sleep(3000);
             roleDropdown.selectByVisibleText("Add Video Only");
             
-             access.editRole();
+            access.editRole();
             
 
 	}

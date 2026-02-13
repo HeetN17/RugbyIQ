@@ -37,8 +37,7 @@ public class EditTeam {
     
     @FindBy(css = "input.name[name='name']")
     WebElement txtEditTeam;
-
-    
+   
     public void clickThreeDots(String teamName) {
     	
          String xpath = "//h2[contains(normalize-space(.), '" + teamName + "')]/ancestor::div[contains(@class, 'rounded')]//button";

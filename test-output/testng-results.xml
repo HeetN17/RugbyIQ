@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T15:42:53 IST" name="Suite" finished-at="2026-02-12T15:43:13 IST" duration-ms="19897">
+  <suite started-at="2026-02-13T10:25:14 IST" name="Suite" finished-at="2026-02-13T10:26:47 IST" duration-ms="92279">
     <groups>
     </groups>
-    <test started-at="2026-02-12T15:42:53 IST" name="Test" finished-at="2026-02-12T15:43:13 IST" duration-ms="19897">
+    <test started-at="2026-02-13T10:25:14 IST" name="Test" finished-at="2026-02-13T10:26:47 IST" duration-ms="92279">
       <class name="test.TrashTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:42:53 IST" name="setUp" finished-at="2026-02-12T15:42:59 IST" duration-ms="5287" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-13T10:25:15 IST" name="setUp" finished-at="2026-02-13T10:25:19 IST" duration-ms="4443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="trash()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:42:59 IST" name="trash" finished-at="2026-02-12T15:43:12 IST" duration-ms="13800" status="PASS">
+        <test-method signature="trash()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-13T10:25:19 IST" name="trash" finished-at="2026-02-13T10:26:46 IST" duration-ms="86945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trash -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-12T15:43:12 IST" name="tearDown" finished-at="2026-02-12T15:43:13 IST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TrashTest@77c2494c]" started-at="2026-02-13T10:26:46 IST" name="tearDown" finished-at="2026-02-13T10:26:47 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
