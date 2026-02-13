@@ -6,11 +6,6 @@ import baseClass.BaseClassRgy;
 import pageObject.LogIn;
 import pageObject.Navigations;
 import pageObject.Trash;
-import pageObject.CreateTeam;
-import pageObject.CreatePlan;
-import pageObject.CreateSession;
-import pageObject.CreateDrill;
-import pageObject.DeleteDrill;
 
 public class TrashTest extends BaseClassRgy {
 

@@ -41,17 +41,17 @@ public class Trash {
 		wait.until(ExpectedConditions.visibilityOf(drillTab)).click();
 	}
 	
-	
 	public void clickRestoreByName(String drillName) {
+		
 	    By restoreBtn = By.xpath(
 	        "//a[contains(@class,'restore-link') and @data-trash_drill_name='" + drillName + "']");
 	    wait.until(ExpectedConditions.elementToBeClickable(restoreBtn)).click();
 	}
 	
 	public void clickDeleteForeverByName(String drillName) {
+		
 	    By deleteBtn = By.xpath(
-	        "//a[contains(@class,'delete-link') and @data-trash_drill_name='" + drillName + "']"
-	    );
+	        "//a[contains(@class,'delete-link') and @data-trash_drill_name='" + drillName + "']");
 	    wait.until(ExpectedConditions.elementToBeClickable(deleteBtn)).click();
 	}
 	
@@ -68,18 +68,15 @@ public class Trash {
 	public void foreverDelete() {
 		
 		By confirmDeleteBtn = By.xpath(
-			    "//a[contains(@class,'empty-trash-btn') and normalize-space()='Yes, delete forever']"
-			);
+			    "//a[contains(@class,'empty-trash-btn') and normalize-space()='Yes, delete forever']");
 
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 			WebElement deleteBtn = wait.until(
-			    ExpectedConditions.presenceOfElementLocated(confirmDeleteBtn)
-			);
+			    ExpectedConditions.presenceOfElementLocated(confirmDeleteBtn));
 
 			((JavascriptExecutor) driver).executeScript(
-			    "arguments[0].scrollIntoView({block:'center'});", deleteBtn
-			);
+			    "arguments[0].scrollIntoView({block:'center'});", deleteBtn);
 
 			wait.until(ExpectedConditions.elementToBeClickable(deleteBtn)).click();
 
@@ -88,8 +85,7 @@ public class Trash {
 	public void confirmDeleteForever() {
 
 	    By confirmDelete = By.xpath(
-	        "//a[contains(@class,'delete-submit-btn') and normalize-space()='Yes, delete forever']"
-	    );
+	        "//a[contains(@class,'delete-submit-btn') and normalize-space()='Yes, delete forever']");
 
 	    WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(confirmDelete));
 
